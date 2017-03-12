@@ -1,0 +1,133 @@
+@import "vars.sass"
+
+//Custom Styles Here
++font-face("OpenSansRegular", "../fonts/OpenSansRegular/OpenSansRegular", $file-formats: eot woff ttf)
++font-face("OpenSansSemiBold", "../fonts/OpenSansSemiBold/OpenSansSemiBold", $file-formats: eot woff ttf)
+
+.test-html
+  background: #ffffff
+  font-family: "OpenSansRegular", sans-serif
+  margin: 0
+
+img
+  max-width: 100%
+  max-height: 100%
+
+.test-html .container
+  margin-left: auto
+  margin-right: auto
+  max-width: $max-width
+  padding: $padding-container
+  box-sizing: border-box
+
+.test-html .half-container
+  width: 50%
+  float: left
+  margin-top: auto
+  margin-bottom: auto
+  box-sizing: border-box
+  @include all_border($border-big)
+
+.test-html .center-block
+  display: table-cell
+  vertical-align: middle
+  float: none
+
+
+.test-html .full-container
+  width: 100%
+  box-sizing: border-box
+  @include all_border($border-big)
+
+.test-html .one-third-container
+  width: 63%
+  box-sizing: border-box
+  @include all_border($border-big)
+
+.test-html .img-60
+  width: 60%
+  @include all_border($border-big)
+  box-sizing: border-box
+  float: left
+
+.test-html .img-40
+  width: 40%
+  @include all_border($border-big)
+  box-sizing: border-box
+  float: left
+
+.test-html .row
+  margin-right: -$border-big
+  margin-left: -$border-big
+  display: table
+
+.test-html .sign
+  font-size: $fsz-min-text
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1
+  letter-spacing: 1px
+  color: $sign-color
+  margin-bottom: 10px
+
+.test-html .sign-img
+  font-size: 14px
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.86
+  letter-spacing: normal
+  color: $sign-color
+  margin-top: 10px
+
+.test-html .title
+  font-family: "OpenSansSemiBold", sans-serif
+  font-size: $fsz-title-big
+  font-weight: $fw-title
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.28
+  text-transform: uppercase
+  letter-spacing: 1px
+  color: $color-deft
+  margin-bottom: 21px
+
+.test-html .description
+  font-size: $fsz-min-text
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.63
+  letter-spacing: normal
+  color: $color-deft
+
+.test-html .btn
+  border: solid 1px $btn-color
+  text-decoration: blink
+  padding: 18px 22px 18px 20px
+  font-size: $fsz-min-text
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1
+  letter-spacing: 1px
+  width: 188px
+  text-align: center
+  color: $btn-color
+  margin-top: 16px
+
+.test-html .hidden-middle
+  display: block
+
+.test-html .enable-small
+  display: none
+
+.test-html .hidden-phone
+  display: block
+
+.test-html .img-shift
+  margin-top: 58%
+
+//ALWAYS END
+@import "media"
